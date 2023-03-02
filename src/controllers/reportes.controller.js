@@ -18,7 +18,7 @@ export const createReportes =async (req,res) => {
 }
 export const allReportes = async (req,res) => {
 
-const [result] = await pool.query('SELECT * FROM reportes;')
+const [result] = await pool.query('select * from reportes;')
      res.json(result)
 
 }
